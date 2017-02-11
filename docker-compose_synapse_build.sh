@@ -12,5 +12,4 @@ YAML_FILE="${DATA_DIR}/synapse.yaml"
 "${BASE_DIR}/scripts/docker-compose_bash-scripts/docker_run_docker-compose.sh" \
 	"$DATA_DIR" \
 	"$YAML_FILE" \
-	exec synapse ./register-user.sh
-
+	build --pull --force-rm 
